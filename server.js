@@ -3,7 +3,7 @@
 const Fastify = require("fastify");
 const mercurius = require("mercurius");
 
-const fastify = Fastify();
+const fastify = Fastify({ logger: true });
 
 const schema = `
   type Query {
